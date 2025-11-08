@@ -8,45 +8,45 @@ This project demonstrates Market Basket Analysis using the Apriori Algorithm to 
 
 Market Basket Analysis is a data mining technique used by retailers to understand customer purchasing behavior. By analyzing transaction data, we can identify which items are frequently bought together. This insight helps businesses to:
 
-Suggest complementary products to customers (cross-selling)
+- Suggest complementary products to customers (cross-selling)
 
-Optimize product placement in stores
+- Optimize product placement in stores
 
-Design promotions, bundles, or discounts
+- Design promotions, bundles, or discounts
 
-Increase revenue by targeting potential buyers for related products
+- Increase revenue by targeting potential buyers for related products
 
 ### Example:
 
-If a customer buys bread, they are likely to buy butter.
+- If a customer buys bread, they are likely to buy butter.
 
-If a customer buys diaper, they might also buy beer.
+- If a customer buys milk, they might also buy bread.
 
 These insights allow businesses to recommend additional products, either at checkout, via email, or through in-store promotions.
 
 ## ⚙️ Features
 
-Transaction Encoding
+1. Transaction Encoding
 Converts a list of transactions into a True/False matrix using TransactionEncoder from mlxtend.
 
-Frequent Itemset Mining
+2. Frequent Itemset Mining
 Uses the Apriori algorithm to find itemsets that appear in at least a specified fraction of transactions (min_support).
 
-Association Rule Generation
+3. Association Rule Generation
 Generates rules of the form X → Y, meaning if a customer buys X, they are likely to buy Y. Rules are filtered by confidence and lift.
 
-Top Recommendations
+4. Top Recommendations
 Sorts association rules to show the strongest cross-selling opportunities.
 
 ## 🛠️ Libraries Used
 
-pandas – for data manipulation
+- pandas – for data manipulation
 
-mlxtend.preprocessing.TransactionEncoder – for transaction encoding
+- mlxtend.preprocessing.TransactionEncoder – for transaction encoding
 
-mlxtend.frequent_patterns.apriori – for frequent itemset mining
+- mlxtend.frequent_patterns.apriori – for frequent itemset mining
 
-mlxtend.frequent_patterns.association_rules – for generating association rules
+- mlxtend.frequent_patterns.association_rules – for generating association rules
 
 ## 📝 Example Dataset
 ```python
@@ -122,21 +122,21 @@ antecedents      consequents  support  confidence      lift
 
 Market Basket Analysis directly supports cross-selling:
 
-Example 1: If a customer buys milk and bread, recommend butter.
+- Example 1: If a customer buys milk and bread, recommend butter.
 
-Example 2: Group items often bought together into promotional bundles (e.g., cola + chips for snack promotions).
+- Example 2: Group items often bought together into promotional bundles (e.g., cola + chips for snack promotions).
 
 By targeting products customers are likely to buy together, businesses can increase average order value and enhance customer satisfaction.
 
 ## 📈 Practical Business Benefits
 
-E-commerce & Retail: Personalized product recommendations at checkout.
+1. E-commerce & Retail: Personalized product recommendations at checkout.
 
-Supermarkets: Optimized shelf placement for frequently bought-together items.
+2. Supermarkets: Optimized shelf placement for frequently bought-together items.
 
-Promotional Offers: Design bundle offers that maximize sales.
+3. Promotional Offers: Design bundle offers that maximize sales.
 
-Inventory Management: Stock complementary items together to reduce stockouts.
+4. Inventory Management: Stock complementary items together to reduce stockouts.
 
 ## 🏃 How to Run
 
@@ -158,6 +158,6 @@ Inventory Management: Stock complementary items together to reduce stockouts.
 
 ## 🔗 References
 
-mlxtend documentation
+- mlxtend documentation
 
-Apriori algorithm on Wikipedia
+- Apriori algorithm on Wikipedia
